@@ -1,0 +1,38 @@
+{
+  "name": "at-types-search",
+  "description": "search d.ts from @types",
+  "version": "0.1.0",
+  "main": "index.js",
+  "bin": {
+    "@ts": "./bin/@ts.js"
+  },
+  "scripts": {
+    "test": "exam -t 30000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ktty1220/at-types-search.git"
+  },
+  "keywords": [
+    "@types",
+    "search"
+  ],
+  "author": {
+    "name": "ktty1220",
+    "email": "ktty1220@gmail.com"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "cli-color": "^1.2.0",
+    "columnify": "^1.5.4",
+    "es6-promise": "^4.0.5",
+    "request": "^2.79.0",
+    "user-home": "^2.0.0",
+    "yargs": "^6.6.0"
+  },
+  "devDependencies": {
+    "exam": "^2.1.0",
+    "rimraf": "^2.6.1"
+  }
+}
