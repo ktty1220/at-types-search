@@ -5,7 +5,7 @@ var rimraf = require('rimraf');
 var atTypesSearch = require('../index');
 var config = require('./_config');
 
-xdescribe('loadIndex', function () {
+describe('loadIndex', function () {
   it('download search-index.json to ~/.at-types-search', function (done) {
     rimraf(config.appDir, function () {
       atTypesSearch.loadIndex()

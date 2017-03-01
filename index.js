@@ -21,7 +21,7 @@ var getAppDir = function () {
 };
 
 var normalize = function (s) {
-  return s.trim().toLowerCase();
+  return (s || '').trim().toLowerCase();
 };
 
 var atTypesSearch = {
@@ -70,7 +70,12 @@ var atTypesSearch = {
     .then(function (index) {
       var swords = words.map(function (w) {
         return normalize(w);
+      }).filter(function (w) {
+        return w;
       });
+      if (swords.length === 0) {
+        return [];
+      }
 
       var prev = null;
       return index.filter(function (item) {

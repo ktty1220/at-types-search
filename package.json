@@ -7,7 +7,8 @@
     "@ts": "./bin/@ts.js"
   },
   "scripts": {
-    "test": "exam -t 30000"
+    "test": "exam -t 30000",
+    "exec": "node ./bin/@ts.js"
   },
   "repository": {
     "type": "git",
